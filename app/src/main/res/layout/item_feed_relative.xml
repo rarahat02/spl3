@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?><!-- item_feed.xml -->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="4dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/musicianPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/musicianName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="rarahat"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/text_like_counter"
+            android:layout_toStartOf="@+id/textView2" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:text="@string/posted_a_rack"
+            android:layout_below="@+id/musicianPic"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView2" />
+
+
+        <TextView android:id="@+id/postTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:text="50 minutes ago"
+            android:textColor="@color/text_like_counter"
+            android:layout_below="@+id/musicianName"
+            android:layout_alignStart="@+id/musicianName"
+            android:layout_marginStart="17dp" />
+
+        <TextView android:id="@+id/postText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/postTime"
+            android:layout_alignParentStart="true" />
+
+
+        <ImageView android:id="@+id/downloadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_download_blue_48dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/postText"
+            android:layout_toEndOf="@+id/musicianName" />
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/downloadButton"
+            android:layout_toEndOf="@+id/musicianPic"
+            android:layout_marginTop="28dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:src="@drawable/ic_download_icon_16dp"
+                android:layout_alignBottom="@+id/downloadCount"
+                android:layout_toStartOf="@+id/downloadCount"
+                android:layout_marginEnd="11dp"/>
+
+            <TextSwitcher
+                android:id="@+id/tsDownloadCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:inAnimation="@anim/slide_in_likes_counter"
+                android:outAnimation="@anim/slide_out_likes_counter">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_like_counter" />
+            </TextSwitcher>
+
+            <TextView
+                android:id="@+id/downloadCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/text_like_counter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <ImageButton
+                    android:id="@+id/btnLike"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_heart_outline_grey" />
+
+                <ImageButton
+                    android:id="@+id/btnComments"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_feed_action"
+                    android:src="@drawable/ic_comment_outline_grey" />
+
+                <ImageButton
+                    android:id="@+id/btnMore"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_feed_action"
+                    android:src="@drawable/ic_more_grey" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_heart_small_blue" />
+
+                    <TextSwitcher
+                        android:id="@+id/tsLikesCounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:inAnimation="@anim/slide_in_likes_counter"
+                        android:outAnimation="@anim/slide_out_likes_counter">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="123 likes"
+                            android:textColor="@color/text_like_counter" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_like_counter" />
+                    </TextSwitcher>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/musicianPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/musicianName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/text_like_counter" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:text="@string/posted_a_rack" />
+
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/postTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="50 minutes ago"
+            android:textColor="@color/text_like_counter" />
+
+        <TextView android:id="@+id/postText"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <ImageView android:id="@+id/downloadButton"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_download_blue_48dp"
+            android:scaleType="centerCrop"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:src="@drawable/ic_download_icon_16dp"
+                android:layout_alignBottom="@+id/downloadCount"
+                android:layout_toStartOf="@+id/downloadCount"
+                android:layout_marginEnd="11dp" />
+
+            <TextSwitcher
+                android:id="@+id/tsDownloadCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:inAnimation="@anim/slide_in_likes_counter"
+                android:outAnimation="@anim/slide_out_likes_counter">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_like_counter" />
+            </TextSwitcher>
+
+            <TextView
+                android:id="@+id/downloadCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/text_like_counter" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <ImageButton
+                android:id="@+id/btnLike"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_heart_outline_grey" />
+
+            <ImageButton
+                android:id="@+id/btnComments"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_feed_action"
+                android:src="@drawable/ic_comment_outline_grey" />
+
+            <ImageButton
+                android:id="@+id/btnMore"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_feed_action"
+                android:src="@drawable/ic_more_grey" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_heart_small_blue" />
+
+                <TextSwitcher
+                    android:id="@+id/tsLikesCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:inAnimation="@anim/slide_in_likes_counter"
+                    android:outAnimation="@anim/slide_out_likes_counter">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123 likes"
+                        android:textColor="@color/text_like_counter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_like_counter" />
+                </TextSwitcher>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>-->
+</android.support.v7.widget.CardView>

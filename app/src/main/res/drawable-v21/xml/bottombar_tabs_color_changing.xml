@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_feed"
+        icon="@drawable/ic_screen_white"
+        title="Feed"
+        barColorWhenSelected="#7B1FA2" />
+<!--    <tab
+        id="@+id/tab_favorites"
+        icon="@drawable/ic_favorites"
+        title="Favorites"
+        barColorWhenSelected="#5D4037" />-->
+    <tab
+        id="@+id/tab_player"
+        icon="@drawable/ic_play_button"
+        title="Music Player"
+        barColorWhenSelected="#556B2F" />
+    <tab
+        id="@+id/tab_search"
+        icon="@drawable/ic_search_24"
+        title="Search"
+        barColorWhenSelected="#FF5252" />
+<!--    <tab
+        id="@+id/tab_food"
+        icon="@drawable/ic_restaurants"
+        title="Food"
+        barColorWhenSelected="#FF9800" />-->
+</tabs>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="?attr/actionBarSize"
+    tools:context="com.yarolegovich.slidingrootnav.sample.fragment.audioplayer.PlayerOrdinaryFiles">
+
+<!--<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">-->
+
+
+        <!--<include layout="@layout/include_list_viewpager" />-->
+
+
+
+    <TextView android:id="@+id/msg_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarLoadingFiles"
+            android:layout_width="150dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"/>
+
+<!--        <ImageView
+            android:id="@+id/collapsingImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_dark_background"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop"
+            app:layout_collapseMode="parallax"/>-->
+
+<!--        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+
+<include layout="@layout/content_ordinary" />
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

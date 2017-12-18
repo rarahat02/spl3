@@ -1,0 +1,120 @@
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">-->
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="?attr/actionBarSize">
+
+
+
+
+
+
+        <!--<android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/extended_appbar_height"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                style="@style/Widget.IOSched.CollapsingHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/sunflower_yellow"
+                android:fitsSystemWindows="true"
+                android:minHeight="?actionBarSize"
+                app:contentScrim="@color/sunflower_yellow"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <include layout="@layout/animated_appbar" />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_gravity="bottom"
+                    app:contentInsetStart="@dimen/padding_normal"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.ToolbarPopup">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feed" />
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>-->
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_width="150dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+<!--        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/view_feed_toolbar" />
+
+
+        </android.support.design.widget.AppBarLayout>-->
+
+
+
+<!--            <android.support.v7.widget.Toolbar
+                android:id="@+id/feed_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="Feed"/>-->
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="72dp"
+            android:layout_marginRight="@dimen/btn_fab_margins"
+            android:src="@drawable/reset_icon"
+            app:backgroundTint="@color/color_light_blue"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+<!--</RelativeLayout>-->

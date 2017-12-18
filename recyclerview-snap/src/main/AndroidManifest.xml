@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.rubensousa.recyclerviewsnap">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true">
+
+
+        <activity android:name="com.rarahat02.rubensousa.recyclerviewsnap.GridActivity" />
+    </application>
+
+</manifest>

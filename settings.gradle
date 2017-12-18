@@ -1,0 +1,1 @@
+include ':app', ':sliding-root-library', ':filepickerDup', ':dialog', ':all_musicians_list', ':splash', ':scroll_bubble', ':multi-snap-recyclerview', ':recyclerview-snap', ':home_tab_layout'

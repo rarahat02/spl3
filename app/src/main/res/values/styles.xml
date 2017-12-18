@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?><!-- styles.xml-->
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/style_color_primary</item>
+        <item name="colorPrimaryDark">@color/style_color_primary_dark</item>
+        <item name="colorAccent">@color/style_color_accent</item>
+        <item name="colorControlHighlight">@color/fab_color_pressed</item>
+    </style>
+
+    <style name="AppTheme.TransparentActivity">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.TransparentActivity.FullScreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ContextMenuButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_context_menu</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <!--login-concept-->
+
+    <style name="AppThemeLoginConcept" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/color_input_hint</item>
+        <item name="colorControlHighlight">@color/color_input_hint</item>
+    </style>
+
+    <style name="Widget" />
+
+    <style name="Widget.TextInputLayout">
+        <item name="android:layout_height">@dimen/wrap_content</item>
+        <item name="android:layout_width">@dimen/input_width</item>
+        <item name="android:textColorHint">@color/color_input_hint</item>
+    </style>
+
+    <style name="Widget.TextEdit">
+        <item name="android:layout_height">@dimen/match_parent</item>
+        <item name="android:layout_width">@dimen/match_parent</item>
+        <item name="android:textColorHighlight">@color/color_text_highlight</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorHint">@color/color_input_hint</item>
+        <item name="android:background">@drawable/state</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:padding">@dimen/text_padding</item>
+    </style>
+
+    <style name="Widget.Hint">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--material_login-->
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/primary_dark</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="android:windowBackground">@color/accent</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/iron</item>
+
+        <item name="colorButtonNormal">@color/primary_darker</item>
+        <item name="android:colorButtonNormal">@color/primary_darker</item>
+    </style>
+
+
+    <style name="WhiteButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@color/ascent_color</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BlueButtonStyle" parent="WhiteButtonStyle">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/ascent_color</item>
+    </style>
+
+
+    <style name="Widget.IOSched.CollapsingHeader" parent="@style/Widget.Design.CollapsingToolbar">
+        <item name="scrimAnimationDuration">200</item>
+        <item name="scrimVisibleHeightTrigger">130dp</item>
+        <item name="statusBarScrim">@null</item>
+        <item name="titleEnabled">false</item>
+    </style>
+
+    <style name="Widget.IOSched.CollapsingHeader.Tabs">
+        <item name="scrimVisibleHeightTrigger">156dp</item>
+    </style>
+
+    <style name="ThemeOverlay.ToolbarPopup" parent="@style/ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

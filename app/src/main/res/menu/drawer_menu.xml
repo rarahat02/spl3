@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_1">
+        <item
+            android:id="@+id/menu_search_musicians"
+            android:icon="@drawable/ic_global_menu_feed"
+            android:title="Search Musicians" />
+        <item
+            android:id="@+id/menu_song_search"
+            android:icon="@drawable/ic_global_menu_direct"
+            android:title="Search Songs" />
+
+        <item
+            android:id="@+id/menu_verify_song_development_purpose"
+            android:icon="@drawable/ic_global_menu_popular"
+            android:title="Verify A Song's Data (Developer)" />
+        <item
+            android:id="@+id/menu_buy_new_song"
+            android:icon="@drawable/ic_global_menu_popular"
+            android:title="Purchase New Song" />
+<!--        <item
+            android:id="@+id/menu_followng_artists"
+            android:icon="@drawable/ic_global_menu_news"
+            android:title="Artists You're Following" />-->
+
+        <item
+            android:id="@+id/musician_mode"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Musician Mode" />
+        <item
+            android:id="@+id/sync_files"
+            android:icon="@drawable/ic_global_menu_likes"
+            android:title="Sync This Device" />
+    </group>
+    <group android:id="@+id/menu_group_2">
+        <item
+            android:id="@+id/menu_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_logout_grey600_24dp"
+            android:title="Logout" />
+    </group>
+</menu>

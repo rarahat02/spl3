@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--colors.xml-->
+<resources>
+    <color name="style_color_primary">#2d5d82</color>
+    <color name="style_color_primary_dark">#21425d</color>
+    <color name="style_color_accent">#01bcd5</color>
+
+    <color name="fab_color_pressed">#007787</color>
+    <color name="fab_color_shadow">#44000000</color>
+
+    <color name="btn_default_light_normal">#00000000</color>
+    <color name="btn_default_light_pressed">#40ffffff</color>
+    <color name="btn_send_normal">#02c754</color>
+    <color name="btn_send_pressed">#006633</color>
+    <color name="btn_default_shadow">#99000000</color>
+    <color name="btn_context_menu_normal">#ffffff</color>
+    <color name="btn_context_menu_pressed">#40000000</color>
+    <color name="btn_context_menu_text_red">#ffff0000</color>
+
+    <color name="text_like_counter">#2b5a83</color>
+
+    <color name="bg_comments">#ffffff</color>
+    <color name="colorLine">#dfdfdf</color>
+
+
+
+
+
+    <color name="material_blue_500">#2196F3</color>
+    <color name="material_blue_700">#1976D2</color>
+
+    <color name="material_deep_purple_500">#673AB7</color>
+    <color name="material_deep_purple_a200">#7C4DFF</color>
+
+    <color name="material_lime_a200">#EEFF41</color>
+
+
+
+
+
+
+
+
+
+
+
+    <color name="color_light_blue">#00DDB6</color>
+
+
+
+
+    <color name="color_log_in">#94019c8f</color>
+    <color name="color_sign_up">#93303f9f</color>
+
+
+    <color name="color_logo_log_in">#b4faf5</color>
+    <color name="color_logo_sign_up">#bbc4fd</color>
+
+    <color name="color_label">#ededed</color>
+    <color name="white_transparent">#fafafa</color>
+
+    <color name="color_input_hint">#FFF</color>
+    <color name="color_text_highlight">#fafafa</color>
+    <color name="color_text">#FFF</color>
+
+
+<!--material_login-->
+
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+
+
+
+
+
+    <!--sqlite login-->
+<!--
+    <color name="colorPrimary">#51d8c7</color>
+    <color name="colorPrimaryDark">#51d8c7</color>
+    <color name="colorAccent">#FFFFFF</color>-->
+    <color name="colorBackground">#413e4f</color>
+   <!-- <color name="colorText">#FFFFFF</color>-->
+    <color name="colorTextHint">#51d8c7</color>
+
+
+
+    <color name="ascent_color">#4285F4</color>
+
+
+    <color name="sunflower_yellow">#ffd500</color>
+</resources>

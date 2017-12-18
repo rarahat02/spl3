@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "117237350579",
+    "firebase_url": "https://instamaterial-master-64217.firebaseio.com",
+    "project_id": "instamaterial-master-64217",
+    "storage_bucket": "instamaterial-master-64217.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117237350579:android:0c10006aa847cc09",
+        "android_client_info": {
+          "package_name": "com.rarahat02.rarahat02.spl3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117237350579-hne92rd5a61n6uulq46dl8m1aud05lp3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rarahat02.rarahat02.spl3",
+            "certificate_hash": "144801d837af049318458f8d9bd596da166fa11a"
+          }
+        },
+        {
+          "client_id": "117237350579-jjocaa1j2nscdfadg38g1ls8pjt0qll0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyy2CEynXu-Ws4UmtfK9nPUFPr1kxObN0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117237350579-jjocaa1j2nscdfadg38g1ls8pjt0qll0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

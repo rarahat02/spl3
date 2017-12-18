@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Enter your phone number"
+        android:textColor="#80000000"
+        android:textSize="@dimen/customTitle" />
+
+    <EditText
+        android:id="@+id/user_phone_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:inputType="phone"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="@dimen/customEntry" />
+
+
+
+<!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/security"
+        android:textColor="#80000000"
+        android:textSize="@dimen/customTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/securityType"
+        android:textColor="#000000"
+        android:textSize="@dimen/customEntry" />-->
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Enter password"
+        android:textColor="#80000000"
+        android:textSize="@dimen/customTitle" />
+
+    <EditText
+        android:id="@+id/password1st"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="@dimen/customEntry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Confirm password"
+        android:textColor="#80000000"
+        android:textSize="@dimen/customTitle" />
+
+    <EditText
+        android:id="@+id/password2nd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="@dimen/customEntry" />
+
+    <CheckBox
+        android:id="@+id/showPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/showPassword"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/example_prompt"
+        android:textColor="#000000"
+        android:textSize="@dimen/customTitle" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_home_outline_grey600_24dp"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/encrypt_file"
+            android:icon="@drawable/ic_email_outline_grey600_24dp"
+            android:title="Encrypt a File" />
+        <item
+            android:id="@+id/upload_song"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Publish a Song" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Payments and Settings" />
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/ic_account_outline_grey600_24dp"
+                android:title="Your Profile" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout_grey600_24dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

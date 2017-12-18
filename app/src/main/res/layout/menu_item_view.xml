@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--menu_item_view.xml-->
+
+
+
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="?attr/actionBarSize"
+    android:background="@drawable/btn_default_light"
+    android:layout_height="?attr/actionBarSize"/>
+
+<!--
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/musician_list"
+    android:layout_width="?attr/actionBarSize"
+    android:layout_height="?attr/actionBarSize"
+    android:onClick="musician_search_click"
+    android:background="@drawable/btn_default_light"
+    android:src="@drawable/ic_group_48dp" />-->

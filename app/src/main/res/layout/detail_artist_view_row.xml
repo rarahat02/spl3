@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/artistPic"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_user_24dp" />
+
+            <TextView android:id="@+id/songTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Song Title"
+                android:textColor="#111"
+                android:textSize="16sp" />
+
+            <TextView android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Feb 14th"
+                android:textColor="#aaa"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/like" />
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/artistPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="3"
+            android:text="The federal beach atc requires states that receive funding to develop a risk-baseed beach evaluation and classification plan and apply it to the big environment..."
+            android:textSize="13sp" />
+
+        <!--    <ImageView
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_download_blue_24dp"
+                android:scaleType="centerCrop"/>-->
+        <Button
+            android:layout_marginTop="8dp"
+            android:id="@+id/downloadButtonFromList"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            style="@style/WhiteButtonStyle"
+            android:text="Download &amp; Purchase Now"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc" />
+
+    </LinearLayout>
+
+<!--    <com.hendraanggrian.widget.ExpandableItem
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutContent="@layout/all_artist_view_content"
+        app:layoutHeader="@layout/all_artist_view_header"/>-->
+</android.support.v7.widget.CardView>

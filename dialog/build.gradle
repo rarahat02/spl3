@@ -1,0 +1,53 @@
+apply from: './dependencies.gradle'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.6.0'
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        //applicationId "com.afollestad.materialdialogssample"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.compileSdk
+        versionCode versions.publishVersionCode
+        versionName versions.publishVersion
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+}
+
+dependencies {
+    compile 'com.afollestad.material-dialogs:core:0.9.4.5'
+    compile 'com.afollestad.material-dialogs:commons:0.9.4.5'
+
+    compile 'com.android.support:gridlayout-v7:' + versions.supportLib
+
+    compile 'com.jakewharton:butterknife:' + versions.butterKnife
+    annotationProcessor 'com.jakewharton:butterknife-compiler:' + versions.butterKnife
+
+    compile 'com.facebook.stetho:stetho:1.4.2'
+    compile project(path: ':sliding-root-library')
+    compile 'com.google.firebase:firebase-database:11.0.2'
+}
