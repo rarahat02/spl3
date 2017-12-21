@@ -2,4 +2,5 @@
 
 ## Dependencies
 Minimum Android Version 6.0
+
 Uses Firebase 11.2.0
